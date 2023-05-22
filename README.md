@@ -10,7 +10,7 @@ Specification
           TypeDeclaration ::= ClassDeclaration
                             | ClassExtendsDeclaration
          ClassDeclaration ::= "class" Identifier "{" ( VarDeclaration )* ( MethodDeclaration )* "}"
-  ClassExtendsDeclaration ::= "class" Identifier "extends" Identifier "{" ( VarDeclaration )* ( MethodDeclaration )* "}"
+    ClassExtendsDeclaration ::= "class" Identifier "extends" Identifier "{" ( VarDeclaration )* ( MethodDeclaration )* "}"
            VarDeclaration ::= Type Identifier ";"
         MethodDeclaration ::= AccessType Type Identifier "(" ( FormalParameterList )? ")" "{" ( VarDeclaration )* ( Statement )* "return" Expression ";" "}"
       FormalParameterList ::= FormalParameter ( FormalParameterRest )*
@@ -37,7 +37,7 @@ Specification
                             | PrintStatement
                     Block ::= "{" ( Statement )* "}"
       AssignmentStatement ::= Identifier "=" Expression ";"
- ArrayAssignmentStatement ::= Identifier "[" Expression "]" "=" Expression ";"
+    ArrayAssignmentStatement ::= Identifier "[" Expression "]" "=" Expression ";"
               IfStatement ::= IfthenElseStatement
                             | IfthenStatement
           IfthenStatement ::= "if" "(" Expression ")" Statement
@@ -85,7 +85,7 @@ Specification
              FalseLiteral ::= "false"
                Identifier ::= <IDENTIFIER>
            ThisExpression ::= "this"
-ArrayAllocationExpression ::= "new" "int" "[" Expression "]"
+    ArrayAllocationExpression ::= "new" "int" "[" Expression "]"
      AllocationExpression ::= "new" Identifier "(" ")"
             NotExpression ::= "!" Expression
         BracketExpression ::= "(" Expression ")"
